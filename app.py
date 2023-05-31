@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request
 from gensim.models.doc2vec import Doc2Vec
 import pandas as pd
 import json
