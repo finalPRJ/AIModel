@@ -36,7 +36,7 @@ def get_similar_cars():
     # 모델 사용 코드
     sentence = request.args.get('sentence')  # URL 매개변수로부터 sentence 값을 받아옴
     print(sentence)
-    sentence = "국산 RV 기아 셀토스 22000000 2020 1000 가솔린"
+    # sentence = "국산 RV 기아 셀토스 22000000 2020 1000 가솔린"
     new_vector = model.infer_vector(sentence.lower().split())
     similar_docs = model.dv.most_similar([new_vector], topn=10)
     
